@@ -12,7 +12,9 @@
                 <div class="caption">
                     <h3>Thumbnail label</h3>
                     <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    <div class="clearfix">
+                        <a href="#" class="btn btn-success pull-right" role="button"> Add to Cart </a>
+                    </div>
                 </div>
             </div>
         </div>
