@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('shop.index');
 });
 
-Route::get('/mugs', function () {
-    return view('shop.mugs');
-});
+Route::get('/mugs', 'MugsController@getIndex');
 
 Route::get('/something', function () {
     return view('shop.something');
