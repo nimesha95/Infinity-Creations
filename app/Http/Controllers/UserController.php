@@ -29,6 +29,8 @@ class UserController extends Controller
         ]);
         $user->save();
 
+        Auth::login($user);
+
         return redirect()->route('product.index');
     }
 
@@ -53,5 +55,11 @@ class UserController extends Controller
     public function getProfile()
     {
         return view('user.profile');
+    }
+
+    public function getLogout()
+    {
+        Auth::logout();
+        return redirect()->back();
     }
 }
