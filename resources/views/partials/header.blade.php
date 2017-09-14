@@ -18,7 +18,6 @@
                 <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="/">Home <span
                                 class="sr-only">(current)</span></a>
                 </li>
-                <li class="{{ Request::is('something') ? 'active' : '' }}"><a href="/something">Just Something</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Products <span class="caret"></span></a>
@@ -39,7 +38,11 @@
                 <button type="submit" class="btn btn-default">Search</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+                <li><a href="{{ route('product.Cart')}}">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart
+                        <span class="badge">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>
+                    </a>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false"><i class="fa fa-user-circle-o" aria-hidden="true"></i>

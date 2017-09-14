@@ -21,9 +21,26 @@ Route::get('/mugs', [
     'as' => 'mug.index'
 ]);
 
-Route::get('/something', function () {
-    return view('shop.something');
-});
+Route::get('/add-to-cart/{id}', [
+    'uses' => 'MugsController@getAddToCart',
+    'as' => 'mug.addToCart'
+]);
+
+Route::get('/cart', [
+    'uses' => 'ProductController@getCart',
+    'as' => 'product.Cart'
+]);
+
+Route::get('reduce/{id}', [
+    'uses' => 'ProductController@getReducedByOne',
+    'as' => 'product.reduceByOne'
+]);
+
+Route::get('remove/{id}', [
+    'uses' => 'ProductController@getRemoveItem',
+    'as' => 'product.remove'
+]);
+
 
 Route::group(['prefix' => 'user'], function () {
     Route::group(['middleware' => 'guest'], function () {

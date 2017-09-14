@@ -11,6 +11,8 @@
         <li>Just something page</li>
         <li>Ready-made mugs link in Products dropdown</li>
         <li>User Login</li>
+        <li>Shopping cart</li>
+        <li>item add remove functionality</li>
         <li>Link protection -- session managment</li>
     </ul>
     <br><br>
@@ -21,7 +23,6 @@
     <p><b>What's left:</b>
     <ul>
         <li>A FRONT PAGE</li>
-        <li>Shopping cart</li>
         <li>etc etc</li>
     </ul>
     </p>
