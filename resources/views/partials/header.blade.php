@@ -25,12 +25,22 @@
                         <li><a href="{{ route('mug.index') }}">Ready-made Mugs</a></li>
                         <li><a href="#">Custom mugs</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Printing</a></li>
-                        <li role="separator" class="divider"></li>
                         <li><a href="#">Sticker Printing</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Services</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Services <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Digital Printing</a></li>
+                        <li><a href="#">Laser Printing</a></li>
+                        <li><a href="#">Sticker Printing</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Designing</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Photo & Video</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
