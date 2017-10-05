@@ -30,6 +30,10 @@
                         <li><a href="#">Sticker Printing</a></li>
                     </ul>
                 </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
